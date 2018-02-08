@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <a href="javascript:history.back()" class="link-back">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Delete Direct Debit payment
+      </h1>
+      <p>
+Are you sure you want to delete this Direct Debit payment?.
+      </p>
+      <p>
+This payment is currently being used for the following plans:
+      </p>
+      <ul class="list list-bullet">
+        <li>Plan A</li>
+        <li> Plan B</li>
+      </ul>
+
+      <div class="form-group" style="margin-top:15px;">
+      <a class="button" type="submit" value="Save and continue">Delete payment</a>
+      </div>
+      <a href="#"> Keep payment</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

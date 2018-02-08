@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <a href="javascript:history.back()" class="link-back">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        You have no Direct Debit plans
+      </h1>
+      <p>
+After checking your details we could not find any Direct Debit payment plans linked to your account or previous payments.
+      </p>
+      <p>
+If you would like to payment via Direct Debit, you can choose it from our payments types.
+      </p>
+
+      <div class="form-group" style="margin-top:15px;">
+      <a href="direct-debit-form-acc-holder" class="button" type="submit" value="Save and continue">Pay with Direct Debit</a>
+      </div>
+      <a href="">Choose another payment method</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

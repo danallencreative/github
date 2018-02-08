@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <a href="javascript:history.back()" class="link-back">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Payment plan summary
+      </h1>
+      <p>
+HM Revenue & Customs have no active payment plan details against this Direct Debit reference.
+If you wish to add a payment plan, please follow the 'Add payment plan' link below.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">DDI reference</th>
+            <th class="numeric" scope="col">Account number</th>
+            <th class="numeric" scope="col">Bank sort code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">601153272</th>
+            <td class="numeric">****7839</td>
+            <td class="numeric">40****</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="panel panel-border-wide" style="margin-top:15px;">
+        <p>
+    Please note: Once you have set up your Direct Debit payment you will not be able to see it online for up to 36 hours.
+        </p>
+      </div>
+
+      <div class="form-group" style="margin-top:15px;">
+      <a class="button" type="submit" value="Save and continue">Make payment with this plan</a>
+      </div>
+
+      <div class="form-group" style="margin-top:15px;">
+      <a href="#" type="submit" value="Save and continue">amend these details</a><br/>
+      <a href="delete-direct-debit" type="submit" value="Save and continue">delete these details</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

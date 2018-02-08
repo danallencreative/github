@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <a href="javascript:history.back()" class="link-back">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Direct Debit payment
+      </h1>
+      <p>
+        The Direct Debits you have set up online are listed below.
+        You can add a new payment plan to an existing Direct Debit Instruction (DDI) or view existing payment plans, by following the appropriate link in the 'Direct Debit reference' column.
+      </p>
+
+      <p>
+        There is no need to enter bank account details unless you want to use an account that you have not previously set up. To enter new details, please follow the 'Set up Direct Debit payment' link below.
+      </p>
+
+      <div class="panel panel-border-wide">
+        <p>
+    Please note: Once you have set up your Direct Debit payment you will not be able to see it online for up to 36 hours.
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">DDI reference</th>
+            <th class="numeric" scope="col">Date set up</th>
+            <th class="numeric" scope="col">Number of plans</th>
+            <th class="numeric" scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">601153272</th>
+            <td class="numeric">07 Sep 2017</td>
+            <td class="numeric">0</td>
+            <td class="numeric"><a href="view-direct-debit-plan">select</a></td>
+          </tr>
+          <tr>
+            <th scope="row">601136931</th>
+            <td class="numeric">27 Jul 2017</td>
+            <td class="numeric">0</td>
+            <td class="numeric"><a href="view-direct-debit-plan">select</a></td>
+          </tr>
+          <tr>
+            <th scope="row">601111260</th>
+            <td class="numeric">07 Jun 2017</td>
+            <td class="numeric">0</td>
+            <td class="numeric"><a href="view-direct-debit-plan">select</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="form-group" style="margin-top:15px;">
+      <a href="direct-debit-form-acc-holder" class="button" type="submit" value="Save and continue">Set up new Direct Debit payment</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

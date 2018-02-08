@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <a href="javascript:history.back()" class="link-back">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Direct Debit sort code
+      </h1>
+
+
+    <div class="form-group">
+      <label class="form-label" for="ni-number">
+      <span class ="form-label-bold">Sort code</span>
+      <span class="form-hint">
+    This is the 6 digit number found on the front of the card used for this direct debit.
+    </span>
+    </label>
+
+    <div class="form-date">
+      <div class="form-group form-group-day">
+      <input class="form-control" id="dob-day" type="text" name="ni-number" value="11">
+      </div>
+      <div class="form-group form-group-day">
+      <input class="form-control" id="dob-day" type="text" name="ni-number" value="22">
+      </div>
+      <div class="form-group form-group-day">
+      <input class="form-control" id="dob-day" type="text" name="ni-number" value="33">
+      </div>
+    </div>
+
+  </div>
+
+
+
+      <div class="form-group" style="margin-top:15px;">
+      <a class="button" type="submit" value="Save and continue">Continue</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

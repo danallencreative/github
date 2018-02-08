@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <a href="javascript:history.back()" class="link-back">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Account holders of your Direct Debit
+      </h1>
+      <p>
+        To continue with setting up a new plan we need more information:
+      </p>
+
+      <div class="form-group">
+      <label class="form-label" for="ni-number">
+        <span class ="form-label-bold">Account holder name</span>
+      </label>
+      <input class="form-control" id="ni-number" type="text" name="ni-number">
+      <br/><br/><a href="#">Add another account holder</a>
+      </div>
+
+      <div class="form-group" style="margin-top:15px;">
+      <a href="direct-debit-form-acc-number" class="button" type="submit" value="Save and continue">Continue</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
